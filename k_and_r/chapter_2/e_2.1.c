@@ -4,7 +4,7 @@
  * Status
  *	in progress
  *
- * Description
+ * Descr
  *	Print types (char, short, int, long, float and double) 
  *	ranges (min - max values).
  *

@@ -1,10 +1,14 @@
 /*
- * 2.3.
- * htoi(s) converts a string of hexadecimal digits 
- * (conluding and optional 0x or 0X) into its equivalent integer value.
+ * e_2.3.
  *
+ * Status
+ *	done
+ * 
+ * Descr
+ * 	htoi(s) converts a string of hexadecimal digits 
+ * 	(conluding and optional 0x or 0X) into its 
+ *	equivalent integer value.
  */
-
 #include <stdio.h>
 #include <ctype.h>
 
@@ -26,7 +30,8 @@ int main()
 
 /*
  * htoi(s) converts a string of hexadecimal digits 
- * (conluding and optional 0x or 0X) into its equivalent integer value.
+ * (conluding and optional 0x or 0X) into its 
+ * equivalent integer value.
 */
 int htoi(const char s[])
 {

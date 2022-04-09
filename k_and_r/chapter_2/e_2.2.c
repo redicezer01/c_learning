@@ -1,6 +1,11 @@
 /*
- * 2.2.
+ * e_2.2.
+ * 
+ * Status
+ *	done.
  *
+ * Descr
+ *	Write cycle without using && or ||.
  */
 #include <stdio.h>
 
