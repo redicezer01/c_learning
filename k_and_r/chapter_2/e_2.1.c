@@ -1,3 +1,18 @@
+/*
+ * e_2.1.
+ * 
+ * Status
+ *	in progress
+ *
+ * Description
+ *	Print types (char, short, int, long, float and double) 
+ *	ranges (min - max values).
+ *
+ * Notes
+ * 	#1: not using bit-arithmetic (cause not learned it)
+ *	#2: trying using only arithmetic and learned 
+ *	    in previos chapters methods.
+ */
 #include <stdio.h>
 #include <limits.h>
 #include <float.h>
@@ -7,6 +22,8 @@ void sh_tsize_char();
 void sh_tsize_shrt();
 void sh_tsize_int();
 void sh_tsize_long();
+
+void sh_tsize_float();
 
 char get_charmin();
 short int get_shrtmin();
@@ -19,7 +36,8 @@ int main()
 	printf("Standart headers.\n\n");
 
 	sh_tsize_stdh_all();
-	printf("-------------------------------------------------------------------\n\n");
+
+	printf("\n-------------------------------------------------------------------\n\n");
 
 	printf("Data types ranges.\n");
 	printf("Direct computation\n\n");
@@ -29,23 +47,28 @@ int main()
 	sh_tsize_int();
 	sh_tsize_long();
 
+	/* sh_tsize_float(); */
+
 	return 0;
 }
 
 void sh_tsize_stdh_all()
 {
 
-	printf("char unsigned range: %d - %d\n", 0, UCHAR_MAX);
-	printf("char signed range: %d - %d\n\n", SCHAR_MIN, SCHAR_MAX);
+	printf("char unsigned range: %d - %d\n",  0, 	     UCHAR_MAX);
+	printf("char signed range: %d - %d\n\n",  SCHAR_MIN, SCHAR_MAX);
 
-	printf("short unsigned range: %d - %d\n", 0, USHRT_MAX);
-	printf("short signed range: %d - %d\n\n", SHRT_MIN, SHRT_MAX);
+	printf("short unsigned range: %d - %d\n", 0, 	     USHRT_MAX);
+	printf("short signed range: %d - %d\n\n", SHRT_MIN,  SHRT_MAX);
 
-	printf("int unsigned range: %d - %ld\n", 0, UINT_MAX);
-	printf("int signed range: %d - %d\n\n", INT_MIN, INT_MAX);
+	printf("int unsigned range: %d - %ld\n",  0, 	     UINT_MAX);
+	printf("int signed range: %d - %d\n\n",   INT_MIN,   INT_MAX);
 
-	printf("long unsigned range: %d - %lu\n", 0, ULONG_MAX);
-	printf("long signed range: %ld - %ld\n", LONG_MIN, LONG_MAX);
+	printf("long unsigned range: %d - %lu\n", 0, 	     ULONG_MAX);
+	printf("long signed range: %ld - %ld\n\n",LONG_MIN,  LONG_MAX);
+
+	printf("float range: %e - %e\n",	  FLT_MIN,   FLT_MAX);
+	printf("double range: %e - %e\n",	  DBL_MIN,   DBL_MAX);
 }
 
 char get_charmin()
@@ -75,6 +98,14 @@ int get_intmin()
 long int get_longmin()
 {
 	long int i;
+	for (i = 1; i+1 > 0; i = i * 2)
+		;
+	return i;
+}
+
+float get_floatmin()
+{
+	float i;
 	for (i = 1; i+1 > 0; i = i * 2)
 		;
 	return i;
@@ -126,4 +157,13 @@ void sh_tsize_long()
 	--ulong;
 	printf("long unsigned range: %d - %lu\n", 0, ulong);
 	printf("long signed range: %ld - %ld\n\n", long_min, long_max);
+}
+
+/* TO-DO: calculate float min value */
+void sh_tsize_float()
+{
+	float float_min, float_max;
+	float_min = get_floatmin();
+	float_max = float_min-1;
+	printf("float range: %e - %e\n\n", float_min, float_max);
 }
