@@ -1,10 +1,19 @@
+/* 
+ * e_1.16.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ *	longest-line program	
+ */
 #include <stdio.h>
 
 int getline();
 
 int main() {
-	int len;	/* длина текущей строки */
-	int max;	/* длина самой длинной строки */	
+	int len;	/* length of current line */
+	int max;	/* max length */	
 
 	max = 0;
 	while((len = getline()) > 0) {
@@ -20,7 +29,7 @@ int main() {
 int getline() {
 	int i, c;
 	
-	for(i = 0; (c=getchar())!=EOF && c!='\n'; ++i)
+	for(i = 0; (c=getchar()) !=EOF && c!='\n'; ++i)
 		;
 
 	return i;

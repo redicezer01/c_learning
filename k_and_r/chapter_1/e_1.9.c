@@ -1,41 +1,46 @@
+/* 
+ * e_1.9.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ *	Copy input to output, replacing each string of one or more blanks
+ *	by a single blank	
+ *
+ * Note
+ *	#1: by blank means ' ' (space).
+ */
 #include <stdio.h>
-/* TODO:
-	пересмотреть алгоритм решения
-*/
 
-/* 1.9.
-	Копирует входной поток в выходной с заменой каждой строки, состоящей из одной или нескольких пробелов,
-	одним пробелом.
-	
-	Вместо пробелов в выходной поток выводится знак "*" для наглядности работы.
-
-	В данной программе не используется else намерено т.к. еще не было в книге информации по else.
-	Также не используются операторы && и || по той же причине.
-*/
-main() {
+int main() 
+{
 	int i, c, cnt, cnt_sp;
 
 	cnt = 0;
 	cnt_sp = 0;
-	while((c = getchar()) != EOF) {
+	while ((c = getchar()) != EOF) {
 		++cnt;
-		if(c == ' ')
+		if (c == ' ')
 			++cnt_sp;
-		if(c != ' ') {
+		if (c != ' ') {
 			if (c == '\n') {
 				if (cnt-1 == cnt_sp)
 					cnt_sp = 1;
 				cnt = 0;
 			}
+
+			/* keep print blank if non-blank line */
 			for(i = 0; i < cnt_sp; ++i)
 				putchar('*');
 			cnt_sp = 0;
+
+			/* visual end of line */
 			if(c == '\n') {
-				cnt = 0;
-				putchar('\\');
-			}
+				putchar('\\'); 			}
 			putchar(c);
 		}		
 			
 	}
+	return 0;
 }

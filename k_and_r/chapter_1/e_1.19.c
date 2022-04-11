@@ -1,12 +1,12 @@
-/* 1.19.
-	reverse reverses its input a line at a time.
-*/
-
-/*
-   TODO:
-	1. revise and improve algorithm
-*/
-
+/* 
+ * e_1.19.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ * 	reverse(s) reverses its input a line at a time.
+ */
 #include <stdio.h>
 
 #define MAX   1000	/* Maximum line length. Limit for array length. */
@@ -17,16 +17,17 @@ int reverse(int s[]);
 int isodd(int n);
 int getline(int l[]);
 
-int main() {
+int main()
+{
 	int line[MAX];
 	int i;
 	
 	/* getting lines. */
-	while(getline(line) == TRUE) {
-		if(reverse(line) == 0 ) {
-			/* print reversed line. */	
-			for(i=0; line[i]!='\0'; ++i)
-				putchar(line[i]);
+	while (getline(line) == TRUE) {
+		if (reverse(line) == 0 ) {
+			for (i=0; line[i]!='\0'; ++i)
+				putchar(line[i]);	/* print reversed line. */	
+
 			putchar('\n');
 		}
 	}
@@ -34,7 +35,8 @@ int main() {
 }
 
 /* getline split incoming character stream into lines. */
-int getline(int l[]) {
+int getline(int l[])
+{
 	int c, i;
 
 	for(i=0; (c=getchar()) != EOF; ++i) {
@@ -49,7 +51,8 @@ int getline(int l[]) {
 
 /* reverse() reverses given string.
    return 1 if given string is empty. */
-int reverse(int s[]) {
+int reverse(int s[])
+{
 	int len, i, half, c;
 	
 	/* length of string */
@@ -75,7 +78,8 @@ int reverse(int s[]) {
 }
 
 /* isodd returns TRUE if given argument is odd */
-int isodd(int n) {
+int isodd(int n)
+{
 	if ((n/2)*2 == n)
 		return TRUE;
 	return FALSE;

@@ -1,8 +1,13 @@
-/* 1.18.
-	Removes trailing blanks and tabs each line of input,
-	and deletes entirely blanks lines.
-*/
-
+/* 
+ * e_1.18.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ *	Removes trailing blanks and tabs each line of input,
+ * 	and deletes entirely blanks lines.
+ */
 #include <stdio.h>
 
 #define MAX 1000 /* maximum countof stored blanks */

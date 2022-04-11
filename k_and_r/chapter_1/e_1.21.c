@@ -1,13 +1,13 @@
 /* 
- * 1.21.
- * entab - replaces strings of blanks by minimum number of tabs and blanks to space to the next tab stop.
+ * e_1.21.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ * 	entab - replaces strings of blanks by minimum number
+ * 	of tabs and blanks to space to the next tab stop.
  */
-
-/*
- * TODO:
- *	- revise and improve algoithm.
- */
-
 #include <stdio.h>
 
 #define TABSTOP 8	/* tab size. */

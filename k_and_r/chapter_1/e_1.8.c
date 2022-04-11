@@ -1,12 +1,20 @@
+/* 
+ * e_1.8.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ *	program counts blanks, tabs and newlines	
+ */
 #include <stdio.h>
 
-/* подсчет кол-ва пробелов, табуляций, строк */
 main() {
 	int c, sp, tab, nl;
 
-	sp = 0;		/* начальное значение кол-ва пробелов */
-	tab = 0;	/* табуляций */
-	nl = 0;		/* строк */
+	sp = 0;		/* spaces count */
+	tab = 0;	/* tabs count */
+	nl = 0;		/* newline count */
 
 	while( (c = getchar()) != EOF) {
 		if(c == ' ')

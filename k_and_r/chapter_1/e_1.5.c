@@ -1,6 +1,14 @@
+/*
+ * e_1.5.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ *	print Fahrenheit-Celsius temperature conversion table in reverse order
+ */
 #include <stdio.h>
 
-/* вывод таблицы температур по Фаренгейту и Цельсию */
 main() {
 	int fahr;
 	for(fahr = 300; fahr >= 0; fahr = fahr - 20)

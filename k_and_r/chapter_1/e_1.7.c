@@ -1,6 +1,14 @@
+/* 
+ * e_1.7.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ *	print value of EOF constant 
+ */
 #include <stdio.h>
 
-/* вывести значение константы EOF */
 main() {
 	printf("EOF value is %d\n", EOF);	
 }

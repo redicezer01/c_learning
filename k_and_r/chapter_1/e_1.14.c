@@ -1,9 +1,17 @@
+/* 
+ * e_1.14.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ *	prints a histogram of the frequencies 
+ *	of diffrent characters
+ */
 #include <stdio.h>
 
 #define LEN 256
 
-/* 1.14.
-*/
 main() {
 	int c, i, j;
 	int hist[LEN];

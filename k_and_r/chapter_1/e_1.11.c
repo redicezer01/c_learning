@@ -1,3 +1,12 @@
+/* 
+ * e_1.11.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ *	word count	
+ */
 #include <stdio.h>
 
 #define IN  1	/* inside a word */

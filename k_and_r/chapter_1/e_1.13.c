@@ -1,8 +1,13 @@
+/* 
+ * e_1.13.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ *	prints a histogram of the length of words its input
+ */
 #include <stdio.h>
-
-/* 1.13.
-	
-*/
 
 #define IN  1	/* in a word */
 #define OUT 0	/* out of word */
@@ -36,7 +41,6 @@ main() {
 
 		if(state == IN) {
 			++wl;
-			/* printf("wl = %d\n", wl); */
 		}
 			
 	}

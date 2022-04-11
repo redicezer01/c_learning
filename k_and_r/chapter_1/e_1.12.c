@@ -1,11 +1,17 @@
+/* 
+ * e_1.12.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ *	Prints its input one word per line
+ */
 #include <stdio.h>
 
 #define IN  1	/* inside a word */
 #define OUT 0	/* outside a word */
 
-/* 1.12.
-	Prints its input one word per line
-*/
 main() {
 
 	int c, nl, nw, nc, state;

@@ -1,12 +1,13 @@
-/* 1.20.
-	detab - replaces tabs in the input with the proper number blanks to space to the next tab stop.	
-*/
-
-/*
-	TODO:
-		1. revise and improve algorithm.
-*/
-
+/* 
+ * e_1.20.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ * 	detab - replaces tabs in the input with the proper number 
+ * 	of blanks to space to the next tab stop
+ */
 #include <stdio.h>
 
 #define TABSTOP 8	/* number of spaces in one tab stop */

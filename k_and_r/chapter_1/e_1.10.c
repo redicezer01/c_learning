@@ -1,16 +1,21 @@
+/* 
+ * e_1.10.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ *	Copy input to output, replacing each tab by \t, 
+ *	each backspace by \b and each backslash by \\
+ */
 #include <stdio.h>
 
-/* 1.10.
-	Заменяет символы:
-		табуляцию на \t
-		backspace на \b
-		обратную черту на \\
-*/
-main() {
+main()
+{
 	int c, replace;
 
 	replace = 0;
-	while((c = getchar()) != EOF) {
+	while ((c = getchar()) != EOF) {
 		if(c == '\t') {
 			putchar('\\');
 			putchar('t');

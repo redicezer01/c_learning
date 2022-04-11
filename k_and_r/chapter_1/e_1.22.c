@@ -1,12 +1,12 @@
-/*
- * in progress...
+/* 
+ * e_1.22.
  *
+ * Status
+ *	in progress
  *
- * 1.22.
- *
- * Fold log input line in to two or more shorter lines.
+ * Description
+ * 	Fold log input line in to two or more shorter lines.
  */
-
 #include <stdio.h>
 
 #define N 60

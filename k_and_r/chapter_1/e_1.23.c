@@ -1,13 +1,12 @@
-/*
- * 1.23.
- *
- */
-
 /* 
- * TODO:
- *	revise and improve algorithm
+ * e_1.23.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ *	removes all comment from a C programm	
  */
-
 #include <stdio.h>
 
 #define TRUE  1

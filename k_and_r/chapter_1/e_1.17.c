@@ -1,16 +1,17 @@
+/* 
+ * e_1.17.
+ *
+ * Status
+ *	done
+ *
+ * Description
+ *	prints all lines that are longer than 80 char.
+ */
 #include <stdio.h>
-
-/* TODO:
-	1. revise and improve the algorithm
-	2. Why printf can't printf buf (symbol array)
-*/
 
 #define TRUE  1
 #define FALSE 0
 
-/* 1.17
-	prints all lines that are longer than 80 char.
-*/
 int main() {
 	int c, i;
 	int len; 	/* length of current line (not bigger than 80) */
@@ -43,4 +44,5 @@ int main() {
 		}
 		
 	}
+	return 0;
 }
