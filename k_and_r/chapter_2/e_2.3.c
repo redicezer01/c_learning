@@ -4,7 +4,7 @@
  * Status
  *	done
  * 
- * Descr
+ * Description
  * 	htoi(s) converts a string of hexadecimal digits 
  * 	(conluding and optional 0x or 0X) into its 
  *	equivalent integer value.

@@ -2,10 +2,10 @@
  * e_2.2.
  * 
  * Status
- *	done.
+ *	done
  *
- * Descr
- *	Write cycle without using && or ||.
+ * Description
+ *	Write cycle without using && or ||
  */
 #include <stdio.h>
 
@@ -16,7 +16,8 @@ int main()
 	int i = 0, lim = LIM;
 	char c;
 	char s[LIM];
-
+	
+	/* getline */
 	while ((c = getchar()) != EOF) {
 		if (c != '\n')
 			if (i < lim-1) {

@@ -1,9 +1,13 @@
 /*
- * 2.4.
- * Write an alternate version of squeeze(s1, s2) that
- * deletes characters in s1 matches any character in the string s2.
+ * e_2.4.
+ * 
+ * Status
+ *	done
+ *
+ * Description
+ * 	Write an alternate version of squeeze(s1, s2) that
+ * 	deletes characters in s1 matches any character in the string s2.
  */
-
 #include <stdio.h>
 
 void squeeze(char s1[], char s2[]);
