@@ -1,2 +1,11 @@
-a.out
+# Ignore all
+*
+
+# Unignore all with extension
+!*.*
+
+# Unignore all dirs
+!*/
+
+# Ignore .out
 *.out
