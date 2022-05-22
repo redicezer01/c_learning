@@ -4,6 +4,9 @@
 # Unignore all with extension
 !*.*
 
+# Unignore README files
+!README
+
 # Unignore all dirs
 !*/
 
